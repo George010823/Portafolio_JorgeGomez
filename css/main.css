@@ -1,0 +1,146 @@
+body {
+    background-color: #2B4266; /* primer color (30%) */
+    background: linear-gradient(to right, #2B4266 10%, #F9F9F9 50%); /* gradiente del primer al segundo color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex-grow: 1;
+    background-color: #F9F9F9;
+}
+
+.navbar{
+    padding-left: 20px;
+}
+
+.jumbotron{
+    margin-top: 40px;
+}
+
+h1{
+    padding-top: 100px;
+}
+
+.div-nav{
+    width: 30%; 
+    float: right;
+    position: absolute; 
+    top: 150px; 
+    right: 0;
+}
+
+.div-nav li{
+    display: inline; 
+    margin: 0 0 0 15px;
+}
+
+.div-nav a{
+    text-transform: uppercase; 
+    color: #392e81; 
+    font-weight: bold; 
+    font-size: 17px; 
+    text-decoration: none; 
+}
+
+.div-nav a:hover{
+    background-color: bisque;
+}
+
+.name{
+    color: bisque;
+    height: 30vh;
+    width: 100vw;
+}
+
+.aboutme{
+    background-color: #F9F9F9;
+    color: #392e81;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    font-size: 23px; 
+    text-align: justify;
+    padding: 80px 0 0 170px;
+}
+
+.container-talleres{
+    background-color: #F9F9F9;
+    color: #392e81;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 60vh;
+    margin-left: -10%;
+    padding-left: 85px;
+}
+
+.card-food{
+	flex: 1 200px;
+}
+
+.boton{
+    display: flex; /* Muestra el botón como un elemento de bloque para que ocupe todo el ancho disponible */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del contenedor principal */
+}
+
+button {
+    background-color: #392e81;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px; 
+  }
+  
+  button:hover {
+    background-color: bisque;
+    color: rgb(11, 11, 11);
+  }
+
+footer {
+    background-color: #F9F9F9; /* primer color (30%) */
+    background: linear-gradient(to right, #F9F9F9 30%, #2B4266 50%); /* gradiente del primer al segundo color */
+    font-weight: bold; 
+    font-size: 16px; 
+    text-align: center;
+    color: bisque;
+    position: fixed;
+    bottom: 0;
+    padding-top: 10px;
+  }
+
+.tab-content{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+/*TABLET*/
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/*MOBILE*/
+@media screen and (max-width:480px){
+    .aboutme{
+        height: 70vh;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .container-talleres{
+        margin-left: -4%;
+        padding-left: 5px;
+        height: 100%;
+        padding-bottom: 60px;
+    }
+}
